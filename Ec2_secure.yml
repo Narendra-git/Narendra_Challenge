@@ -30,7 +30,6 @@
          assign_public_ip: yes
       register: ec2
 #creating security group
-	  
     - name: Create security group
   ec2_group:
     name: "{{ project_name }}_security_group"
